@@ -26,7 +26,7 @@ const ProductList: React.FC<Props> = ({ addToCart }) => {
       <h2>Lista de Produtos</h2>
       <div className={styles.productsContainer}>
         {products.map((product) => (
-            <div key={product.id} className={styles.products}>
+            <div key={product.id} className='products'>
                 <h3>{product.name}</h3>
                 <p>Preço: <span>R${product.price}</span></p>
                 <button className={`btn ${styles.btnAdd}`} onClick={() => addToCart(product)}>Adicionar ao Carrinho</button>

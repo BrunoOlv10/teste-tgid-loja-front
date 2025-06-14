@@ -5,7 +5,11 @@
   border: none;
   color: rgba(255, 255, 255, 0.700);
   overflow-x: hidden;
-  overflow-y: hidden;
+}
+
+html {
+  scrollbar-color: #00dfd8 #333;
+  scrollbar-width: thin;
 }
 
 body {
@@ -20,17 +24,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 100vh;
   width: 100vw;
   padding: 55px 0;
   text-align: center;
   overflow-y: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-
-.mainContainer::-webkit-scrollbar {
-    display: none;
+  scrollbar-color: #00dfd8 #333;
+  scrollbar-width: thin;
 }
 
 h1 {
@@ -50,6 +51,18 @@ h2 {
   color: transparent;
   padding: 10px 0 30px 0;
   overflow-y: hidden;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background-color: #333;
+  box-shadow: 0 0 10px #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 h3, button, span:hover  {
@@ -73,4 +86,10 @@ span {
   padding: 10px;
   border-radius: 10px;
   cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .mainContainer {
+    height: auto;
+  }
 }

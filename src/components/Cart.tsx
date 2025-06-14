@@ -18,12 +18,12 @@ const Cart: React.FC<Props> = ({ cartItems, removeOneUnit, removeAllUnits }) => 
       <h2 className={styles.cartTitle}>Carrinho de Compras</h2>
       <div>
         {cartItems.length === 0 ? (
-            <p>O carrinho está vazio.</p>
+            <p className={styles.msgEmpty}>O carrinho está vazio.</p>
             ) : (
                 <div>
                     <div className={styles.productsContainer}>
                         {cartItems.map(item => (
-                            <div key={item.id} className={styles.products}>
+                            <div key={item.id} className={`products ${styles.products}`}>
                                 <h3>{item.name}</h3>
                                 <p>Preço Unitário: <span>R${item.price}</span></p>
                                 <p>Quantidade: <span>{item.quantity}</span></p>
