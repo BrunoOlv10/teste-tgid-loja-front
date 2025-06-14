@@ -1,0 +1,50 @@
+.mainProductsContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #2a2a2a;
+  box-shadow: 0 0 10px #fff;
+  min-height: 300px;
+  width: 70vw;
+  margin-bottom: 40px;
+  border-radius: 30px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.productsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px 0;
+    max-height: 350px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.productsContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background-color: #333;
+  box-shadow: 0 0 10px #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.btnAdd {
+    background-color: #00ff00e1;
+    margin-top: 10px;
+}
+
+.btnAdd:hover {
+    background-color: green;
+}
