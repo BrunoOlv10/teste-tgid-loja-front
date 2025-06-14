@@ -2,7 +2,7 @@
   background-color: #2a2a2a;
   box-shadow: 0 0 10px #fff;
   max-height: 500px;
-  width: 70vw;
+  width: 40vw;
   margin-bottom: 40px;
   border-radius: 30px;
   overflow-y: hidden;
@@ -56,9 +56,16 @@
     margin-top: 10px;
 }
 
+@media (max-width: 1000px) {
+    .mainProductsContainer {
+        width: 70vw;
+    }
+}
+
 @media (max-width: 500px) {
   .mainProductsContainer {
     min-height: 250px;
+    width: 70vw;
   }
 
   .productsContainer {

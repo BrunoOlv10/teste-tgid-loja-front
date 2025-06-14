@@ -5,7 +5,7 @@
   background-color: #2a2a2a;
   box-shadow: 0 0 10px #fff;
   min-height: 300px;
-  width: 70vw;
+  width: 40vw;
   margin-bottom: 40px;
   border-radius: 30px;
   padding: 20px 0px 0 0px;
@@ -31,6 +31,10 @@
 }
 
 @media (max-width: 1000px) {
+  .mainProductsContainer {
+    width: 70vw;
+  }
+
   .productsContainer {
     display: flex;
     flex-direction: row;
@@ -39,5 +43,11 @@
     overflow-y: auto;
     scrollbar-color: #00dfd8 #333;
     scrollbar-width: thin;
+  }
+}
+
+@media (max-width: 500px) {
+  .mainProductsContainer {
+    width: 70vw;
   }
 }
