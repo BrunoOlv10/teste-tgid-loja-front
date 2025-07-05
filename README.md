@@ -25,7 +25,7 @@ npm install
 Execute o comando para iniciar o JSON Server usando o dbTeste.json como banco de dados fake:
 <br>
 ```bash
-npx json-server --watch src/dbTeste.json --port 3001
+npx json-server --watch dbTeste.json --port 3001
 ```
 
 ### 4. Iniciar Front-End (React)
